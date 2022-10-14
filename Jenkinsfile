@@ -8,12 +8,9 @@ pipeline {
                 branch : 'main'
             }
         }
-        stage('TF_Apply') {
+        stage('Destroy') {
             steps {
-                sh """terraform init
-                      terraform validate
-                      terraform apply -auto-approve
-                   """
+                sh 'terraform destroy -auto-approve' 
             }
         }
     }
