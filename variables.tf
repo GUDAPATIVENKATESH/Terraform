@@ -1,5 +1,5 @@
 #for provider
-variable "availability_zone_names" {
+variable "provider" {
   type = string
   default = "us-west-2"
 
