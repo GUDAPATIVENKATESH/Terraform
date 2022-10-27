@@ -6,11 +6,7 @@ variable "region" {
 variable "cidr_block_vpc" {
   type = string
 }
-#for SUBNET01
-#variable "cidr" {
-#  type = list(string)
-#}
-#for availabiltyzone
+
 variable "availability_zone" {
   type = list(string)
 }
